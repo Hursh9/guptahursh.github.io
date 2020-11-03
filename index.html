@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a> 
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>HORSHO_AND_PIYU</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+
+            <!-- 1 -->
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/1.jpeg);"></div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <!-- <img src="images/logos/googleplus.png"> -->
+                    </div>
+
+                    <div class="subtitle">
+                        Lal Lal gaal gulo! Ki Mitti lagche!🙈
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/2.jpeg)"></div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <!-- <img src="images/logos/whatsapp.png"> -->
+                    </div>
+
+                    <div class="subtitle">
+                        Mone ache? Amader Prothom date? Momo khawacchilam!😍
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/3.jpeg)"></div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <!-- <img src="images/logos/twitter.png"> -->
+                    </div>
+
+                    <div class="subtitle">
+                        Ami sottie bolchi re! You are the most Sundor meye!But you just don't know it... 😌
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/4.jpeg)"></div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <!-- <img src...="images/logos/youtube.png"> -->
+                    </div>
+
+                    <div class="subtitle">
+                        Achha chhoro tumhara itna taarif karenge toh jhhuta lagega. 😅
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/5.jpeg)"></div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <!-- <img src="images/logos/podcast.png"> -->
+                    </div>
+
+                    <div class="subtitle">
+                        I wish tum aise hi kisi din palat ke humko dekhogi!🥺
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/6.jpeg)"></div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <!-- <img src="images/logos/linked-in.png"> -->
+                    </div>
+
+                    <div class="subtitle">
+                        Tumhare aankh mein na humko ek light dikhta hai! That's the light of my life...❤️
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/7.jpeg)"></div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <!-- <img src="images/logos/amazon.png"> -->
+                    </div>
+
+                    <div class="subtitle">
+                        Uff! You are just awesome re!💘
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/8.jpeg)"></div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <!-- <img src="images/logos/facebook.png"> -->
+                    </div>
+
+                    <div class="subtitle">
+                        Aise hi baithi rehna... Wait karna mera. I will come one day!😕
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/9.jpeg)"></div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <!-- <img src="images/logos/blogger.png"> -->
+                    </div>
+
+                    <div class="subtitle">
+                        I always had a wish(one among many) ki tumko Saare pehne hue <a class='subtitle', href="https://youtu.be/yJ1uLVgv3Vg?t=129">baarish mein</a> zoobi doobi kare.😍 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    // iterator variable portfolioItem
+    portfolioItems.forEach(portfolioItem =>{
+        // an anonymous function ()
+        portfolioItem.addEventListener('mouseover',() =>{
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout',() =>{
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    }
+    )
+</script>
+</html>
